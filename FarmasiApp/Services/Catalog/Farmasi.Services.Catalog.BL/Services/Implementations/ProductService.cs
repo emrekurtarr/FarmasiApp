@@ -88,15 +88,12 @@ namespace Farmasi.Services.Catalog.BL.Services.Implementations
             }
             if (productListRequestDto.OrderBy != null)
             {
-                switch (productListRequestDto.OrderBy)
+                query = productListRequestDto.OrderBy switch
                 {
-                    case OrderBy.PriceAsc:
-                        query = query.OrderBy(x => x.Price);
-                        break;
-                    case OrderBy.PriceDesc:
-                        query = query.OrderByDescending(x => x.Price);
-                        break;
-                }
+                    OrderBy.PriceAsc => query = query.OrderBy(x => x.Price),
+                    OrderBy.PriceDesc => query = query.OrderByDescending(x => x.Price),
+                    _ => query
+                };
             }
             List<Product> products = await query.Skip((productListRequestDto.PageIndex - 1) * productListRequestDto.PageSize).Take(productListRequestDto.PageSize).ToListAsync();
             List<ProductDto> productListDto = _mapper.Map<List<ProductDto>>(products);
