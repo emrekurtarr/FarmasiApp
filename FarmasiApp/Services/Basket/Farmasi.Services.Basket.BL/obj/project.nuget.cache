@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "s2KFWBFXwzpOhSVY/UX55zvTcCTqBzE01kyXvrlL0Uc3CZf+7FinTCUEeCF1M8iJROTOo/IO9k1z7mVov62cKQ==",
+  "success": true,
+  "projectFilePath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.BL\\Farmasi.Services.Basket.BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Allthebest\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
+    "C:\\Users\\Allthebest\\.nuget\\packages\\stackexchange.redis\\2.6.86\\stackexchange.redis.2.6.86.nupkg.sha512",
+    "C:\\Users\\Allthebest\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

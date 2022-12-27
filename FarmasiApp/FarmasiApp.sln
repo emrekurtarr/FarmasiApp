@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{AFE43539-D320-4106-8EA4-FA8B8FCE221F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E49F2A19-35EE-4AFB-A600-0AD7798CAEF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{279D614A-C96D-461A-9DDA-F80D3C91AD4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmasi.Shared", "Shared\Farmasi.Shared\Farmasi.Shared.csproj", "{D60AC5F6-DC6F-4F29-A45E-C98677668756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmasi.Services.Catalog.API", "Services\Catalog\Farmasi.Services.Catalog.API\Farmasi.Services.Catalog.API.csproj", "{22B20930-BC06-49F1-BE99-7DCBDB13B014}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmasi.Services.Catalog.DAL", "Services\Catalog\Farmasi.Services.Catalog.DAL\Farmasi.Services.Catalog.DAL.csproj", "{A600253D-D844-48A0-9054-A330FBC80F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmasi.Services.Catalog.BL", "Services\Catalog\Farmasi.Services.Catalog.BL\Farmasi.Services.Catalog.BL.csproj", "{66718BD4-DA31-4461-99BB-DE7290530BBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{32AAB0E6-63AC-4646-BD55-E949D78BD924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmasi.Services.Basket.API", "Services\Basket\Farmasi.Services.Basket.API\Farmasi.Services.Basket.API.csproj", "{9AB48EAF-3F0C-4F41-9211-8A3231CBBC3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServicesPorts", "ServicesPorts", "{2C43D390-95ED-4E84-A1F1-8B18BBB7CD30}"
+	ProjectSection(SolutionItems) = preProject
+		Ports.txt = Ports.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmasi.Services.Basket.DAL", "Services\Basket\Farmasi.Services.Basket.DAL\Farmasi.Services.Basket.DAL.csproj", "{43003893-4B5D-4680-A594-2F8C660EAA19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farmasi.Services.Basket.BL", "Services\Basket\Farmasi.Services.Basket.BL\Farmasi.Services.Basket.BL.csproj", "{D24016A3-49A1-4B6F-ACCD-400A19C68F8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D60AC5F6-DC6F-4F29-A45E-C98677668756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60AC5F6-DC6F-4F29-A45E-C98677668756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60AC5F6-DC6F-4F29-A45E-C98677668756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60AC5F6-DC6F-4F29-A45E-C98677668756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B20930-BC06-49F1-BE99-7DCBDB13B014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B20930-BC06-49F1-BE99-7DCBDB13B014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B20930-BC06-49F1-BE99-7DCBDB13B014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B20930-BC06-49F1-BE99-7DCBDB13B014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A600253D-D844-48A0-9054-A330FBC80F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A600253D-D844-48A0-9054-A330FBC80F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A600253D-D844-48A0-9054-A330FBC80F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A600253D-D844-48A0-9054-A330FBC80F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66718BD4-DA31-4461-99BB-DE7290530BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66718BD4-DA31-4461-99BB-DE7290530BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66718BD4-DA31-4461-99BB-DE7290530BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66718BD4-DA31-4461-99BB-DE7290530BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB48EAF-3F0C-4F41-9211-8A3231CBBC3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB48EAF-3F0C-4F41-9211-8A3231CBBC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB48EAF-3F0C-4F41-9211-8A3231CBBC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB48EAF-3F0C-4F41-9211-8A3231CBBC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43003893-4B5D-4680-A594-2F8C660EAA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43003893-4B5D-4680-A594-2F8C660EAA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43003893-4B5D-4680-A594-2F8C660EAA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43003893-4B5D-4680-A594-2F8C660EAA19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24016A3-49A1-4B6F-ACCD-400A19C68F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24016A3-49A1-4B6F-ACCD-400A19C68F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24016A3-49A1-4B6F-ACCD-400A19C68F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24016A3-49A1-4B6F-ACCD-400A19C68F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{279D614A-C96D-461A-9DDA-F80D3C91AD4C} = {E49F2A19-35EE-4AFB-A600-0AD7798CAEF2}
+		{D60AC5F6-DC6F-4F29-A45E-C98677668756} = {AFE43539-D320-4106-8EA4-FA8B8FCE221F}
+		{22B20930-BC06-49F1-BE99-7DCBDB13B014} = {279D614A-C96D-461A-9DDA-F80D3C91AD4C}
+		{A600253D-D844-48A0-9054-A330FBC80F37} = {279D614A-C96D-461A-9DDA-F80D3C91AD4C}
+		{66718BD4-DA31-4461-99BB-DE7290530BBE} = {279D614A-C96D-461A-9DDA-F80D3C91AD4C}
+		{32AAB0E6-63AC-4646-BD55-E949D78BD924} = {E49F2A19-35EE-4AFB-A600-0AD7798CAEF2}
+		{9AB48EAF-3F0C-4F41-9211-8A3231CBBC3F} = {32AAB0E6-63AC-4646-BD55-E949D78BD924}
+		{43003893-4B5D-4680-A594-2F8C660EAA19} = {32AAB0E6-63AC-4646-BD55-E949D78BD924}
+		{D24016A3-49A1-4B6F-ACCD-400A19C68F8B} = {32AAB0E6-63AC-4646-BD55-E949D78BD924}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C25CBC71-6504-4C91-ACF8-E5065AA7D234}
+	EndGlobalSection
+EndGlobal

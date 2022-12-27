@@ -1,0 +1,280 @@
+{
+  "format": 1,
+  "restore": {
+    "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.API\\Farmasi.Services.Basket.API.csproj": {}
+  },
+  "projects": {
+    "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.API\\Farmasi.Services.Basket.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.API\\Farmasi.Services.Basket.API.csproj",
+        "projectName": "Farmasi.Services.Basket.API",
+        "projectPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.API\\Farmasi.Services.Basket.API.csproj",
+        "packagesPath": "C:\\Users\\Allthebest\\.nuget\\packages\\",
+        "outputPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Allthebest\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.BL\\Farmasi.Services.Basket.BL.csproj": {
+                "projectPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.BL\\Farmasi.Services.Basket.BL.csproj"
+              },
+              "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.DAL\\Farmasi.Services.Basket.DAL.csproj": {
+                "projectPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.DAL\\Farmasi.Services.Basket.DAL.csproj"
+              },
+              "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Shared\\Farmasi.Shared\\Farmasi.Shared.csproj": {
+                "projectPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Shared\\Farmasi.Shared\\Farmasi.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.86, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.BL\\Farmasi.Services.Basket.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.BL\\Farmasi.Services.Basket.BL.csproj",
+        "projectName": "Farmasi.Services.Basket.BL",
+        "projectPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.BL\\Farmasi.Services.Basket.BL.csproj",
+        "packagesPath": "C:\\Users\\Allthebest\\.nuget\\packages\\",
+        "outputPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Allthebest\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Shared\\Farmasi.Shared\\Farmasi.Shared.csproj": {
+                "projectPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Shared\\Farmasi.Shared\\Farmasi.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.86, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.DAL\\Farmasi.Services.Basket.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.DAL\\Farmasi.Services.Basket.DAL.csproj",
+        "projectName": "Farmasi.Services.Basket.DAL",
+        "projectPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.DAL\\Farmasi.Services.Basket.DAL.csproj",
+        "packagesPath": "C:\\Users\\Allthebest\\.nuget\\packages\\",
+        "outputPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Services\\Basket\\Farmasi.Services.Basket.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Allthebest\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Shared\\Farmasi.Shared\\Farmasi.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Shared\\Farmasi.Shared\\Farmasi.Shared.csproj",
+        "projectName": "Farmasi.Shared",
+        "projectPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Shared\\Farmasi.Shared\\Farmasi.Shared.csproj",
+        "packagesPath": "C:\\Users\\Allthebest\\.nuget\\packages\\",
+        "outputPath": "A:\\EMRE\\EMRE\\Farmasi\\FarmasiApp\\Shared\\Farmasi.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Allthebest\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

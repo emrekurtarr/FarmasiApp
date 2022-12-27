@@ -1,0 +1,12 @@
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\bin\Debug\net6.0\Farmasi.Services.Basket.DAL.deps.json
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\bin\Debug\net6.0\Farmasi.Services.Basket.DAL.dll
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\bin\Debug\net6.0\Farmasi.Services.Basket.DAL.pdb
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\Farmasi.Services.Basket.DAL.csproj.AssemblyReference.cache
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\Farmasi.Services.Basket.DAL.GeneratedMSBuildEditorConfig.editorconfig
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\Farmasi.Services.Basket.DAL.AssemblyInfoInputs.cache
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\Farmasi.Services.Basket.DAL.AssemblyInfo.cs
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\Farmasi.Services.Basket.DAL.csproj.CoreCompileInputs.cache
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\Farmasi.Services.Basket.DAL.dll
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\refint\Farmasi.Services.Basket.DAL.dll
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\Farmasi.Services.Basket.DAL.pdb
+A:\EMRE\EMRE\Farmasi\FarmasiApp\Services\Basket\Farmasi.Services.Basket.DAL\obj\Debug\net6.0\ref\Farmasi.Services.Basket.DAL.dll
