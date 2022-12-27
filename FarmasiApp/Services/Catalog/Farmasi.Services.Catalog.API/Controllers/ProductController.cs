@@ -3,7 +3,6 @@ using Farmasi.Services.Catalog.BL.Services.Abstractions;
 using Farmasi.Shared;
 using Farmasi.Shared.CustomControllerBase;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Farmasi.Services.Catalog.API.Controllers
@@ -22,7 +21,7 @@ namespace Farmasi.Services.Catalog.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
-            Response<ProductDto> response = await _productService.GetByIdAsync(id);   
+            Response<ProductDto> response = await _productService.GetByIdAsync(id);
             return CreateActionResultInstance(response);
         }
 
@@ -35,13 +34,13 @@ namespace Farmasi.Services.Catalog.API.Controllers
 
         [AllowAnonymous]
         [HttpPost("pagination")]
-        public async Task<IActionResult> GetProductsByPagination([FromBody]ProductListRequestDto productListRequestDto)
+        public async Task<IActionResult> GetProductsByPagination([FromBody] ProductListRequestDto productListRequestDto)
         {
             Response<List<ProductDto>> res = await _productService.GetProductListWithPagination(productListRequestDto);
             return CreateActionResultInstance(res);
         }
 
-        
+
         [HttpPost]
         public async Task<IActionResult> AddProduct(ProductCreateDto productCreateDto)
         {

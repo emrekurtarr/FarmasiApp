@@ -6,11 +6,6 @@ using Farmasi.Services.Catalog.DAL.Entities;
 using Farmasi.Shared;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Farmasi.Services.Catalog.BL.Services.Implementations
 {
@@ -23,7 +18,7 @@ namespace Farmasi.Services.Catalog.BL.Services.Implementations
         public ProductService(IProductRepository productRepository, ICategoryRepository categoryRepository, IMapper mapper)
         {
             _productRepository = productRepository;
-            _categoryRepository = categoryRepository;   
+            _categoryRepository = categoryRepository;
             _mapper = mapper;
         }
 
@@ -54,7 +49,7 @@ namespace Farmasi.Services.Catalog.BL.Services.Implementations
 
         public async Task<Response<List<ProductDto>>> GetAllAsync()
         {
-            List<Product> products = await _productRepository.GetListAsync(); 
+            List<Product> products = await _productRepository.GetListAsync();
             List<Category> categories = await _categoryRepository.GetListAsync();
 
             if (products.Any())
@@ -77,7 +72,7 @@ namespace Farmasi.Services.Catalog.BL.Services.Implementations
             if (product == null)
             {
                 return Response<ProductDto>.Error("Product not found", 404);
-            } 
+            }
 
             product.Category = await _categoryRepository.GetAsync(c => string.Equals(c.Id, product.CategoryId));
             return Response<ProductDto>.Success(_mapper.Map<ProductDto>(product), 200);
@@ -86,7 +81,7 @@ namespace Farmasi.Services.Catalog.BL.Services.Implementations
         public async Task<Response<List<ProductDto>>> GetProductListWithPagination(ProductListRequestDto productListRequestDto)
         {
             IMongoQueryable<Product> query = _productRepository.GetQuery();
-            
+
             if (string.IsNullOrEmpty(productListRequestDto.CategoryId))
             {
                 query = query.Where(x => string.Equals(x.CategoryId, productListRequestDto.CategoryId));
@@ -115,7 +110,7 @@ namespace Farmasi.Services.Catalog.BL.Services.Implementations
             var updatedProduct = _mapper.Map<Product>(productUpdateDto);
             Product result = await _productRepository.UpdateAsync(updatedProduct);
 
-            if(result == null)
+            if (result == null)
                 return Response<NoContent>.Error("Product not found", 404);
 
             return Response<NoContent>.Success(204);

@@ -1,12 +1,7 @@
 ﻿using Farmasi.Services.Basket.BL.Dtos.Basket;
 using Farmasi.Services.Basket.BL.Services.Abstractions;
 using Farmasi.Shared;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace Farmasi.Services.Basket.BL.Services.Implementations
 {
@@ -39,9 +34,13 @@ namespace Farmasi.Services.Basket.BL.Services.Implementations
 
         public async Task<Response<bool>> SaveOrUpdate(BasketDto basketDto)
         {
-            var status = await _redisService.GetDb().StringSetAsync("FarmasiBasket", JsonSerializer.Serialize(basketDto));
-
-            return status ? Response<bool>.Success(204) : Response<bool>.Error("Basket could not update or save", 500);
+            if(basketDto is not null)
+            {
+                var status = await _redisService.GetDb().StringSetAsync("FarmasiBasket", JsonSerializer.Serialize(basketDto));
+                return status ? Response<bool>.Success(204) : Response<bool>.Error("Basket could not update or save", 500);
+            }
+            
+            return Response<bool>.Error("Basket could not update or save", 500);
         }
     }
 }

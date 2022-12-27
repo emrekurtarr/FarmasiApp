@@ -4,11 +4,6 @@ using Farmasi.Services.Catalog.BL.Services.Abstractions;
 using Farmasi.Services.Catalog.DAL.Data.Repository.Abstractions;
 using Farmasi.Services.Catalog.DAL.Entities;
 using Farmasi.Shared;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Farmasi.Services.Catalog.BL.Services.Implementations
 {
@@ -20,7 +15,7 @@ namespace Farmasi.Services.Catalog.BL.Services.Implementations
         public CategoryService(ICategoryRepository categoryRepo, IMapper mapper)
         {
             _categoryRepo = categoryRepo;
-            _mapper = mapper;   
+            _mapper = mapper;
         }
 
         public async Task<Response<CategoryDto>> CreateAsync(CategoryCreateDto categoryCreateDto)

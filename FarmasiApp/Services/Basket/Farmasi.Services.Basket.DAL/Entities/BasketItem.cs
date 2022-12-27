@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Farmasi.Services.Basket.DAL.Entities
+﻿namespace Farmasi.Services.Basket.DAL.Entities
 {
     public class BasketItem
     {

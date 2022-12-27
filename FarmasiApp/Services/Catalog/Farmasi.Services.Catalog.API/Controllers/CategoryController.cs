@@ -2,8 +2,6 @@
 using Farmasi.Services.Catalog.BL.Services.Abstractions;
 using Farmasi.Shared;
 using Farmasi.Shared.CustomControllerBase;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Farmasi.Services.Catalog.API.Controllers

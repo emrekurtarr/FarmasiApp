@@ -1,9 +1,4 @@
 ﻿using StackExchange.Redis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Farmasi.Services.Basket.BL.Services.Implementations
 {
@@ -29,7 +24,7 @@ namespace Farmasi.Services.Basket.BL.Services.Implementations
                 EndPoints = { $"{_host}:{_port}" }
             };
             _ConnectionMultiplexer = ConnectionMultiplexer.Connect(option);
-        } 
+        }
 
         public IDatabase GetDb(int db = 1) => _ConnectionMultiplexer.GetDatabase(db);
     }

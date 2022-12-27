@@ -1,12 +1,7 @@
 ﻿using Farmasi.Services.Catalog.DAL.Data.Repository.Abstractions;
 using Farmasi.Services.Catalog.DAL.Entities;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Farmasi.Services.Catalog.DAL.Data.Repository.Implementations
 {
@@ -31,7 +26,7 @@ namespace Farmasi.Services.Catalog.DAL.Data.Repository.Implementations
 
         public long Delete(string id)
         {
-            DeleteResult result = _dbCollection.DeleteOne(x => string.Equals(id,x.Id));
+            DeleteResult result = _dbCollection.DeleteOne(x => string.Equals(id, x.Id));
 
             if (result.DeletedCount > 0)
             {
@@ -46,7 +41,7 @@ namespace Farmasi.Services.Catalog.DAL.Data.Repository.Implementations
         public async Task<long> DeleteAsync(string id)
         {
             DeleteResult result = await _dbCollection.DeleteOneAsync(c => string.Equals(c.Id, id));
-            
+
             if (result.DeletedCount > 0)
             {
                 return result.DeletedCount;
@@ -80,11 +75,11 @@ namespace Farmasi.Services.Catalog.DAL.Data.Repository.Implementations
                 return await _dbCollection.Find(entity => true).ToListAsync();
             else
                 return await _dbCollection.Find(predicate).ToListAsync();
-        }   
+        }
 
         public T Update(T entity)
         {
-            T result = _dbCollection.FindOneAndReplace(x => string.Equals(entity.Id, x.Id),entity);
+            T result = _dbCollection.FindOneAndReplace(x => string.Equals(entity.Id, x.Id), entity);
             return result;
         }
 
@@ -94,6 +89,6 @@ namespace Farmasi.Services.Catalog.DAL.Data.Repository.Implementations
             return result;
         }
 
-        
+
     }
 }

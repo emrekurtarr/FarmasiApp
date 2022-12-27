@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System.Text;
 
-namespace Farmasi.Services.Basket.API.Helpers
+namespace Farmasi.Services.Basket.BL.Helpers
 {
-    public static class HttpHelper
+    public class HttpHelper
     {
         private static readonly string apiBasicUri = "localhost:";
 

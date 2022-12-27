@@ -1,14 +1,8 @@
-﻿using Farmasi.Services.Basket.API.Dtos;
-using Farmasi.Services.Basket.API.Helpers;
-using Farmasi.Services.Basket.BL.Dtos.Basket;
-using Farmasi.Services.Basket.BL.Dtos.BasketItem;
+﻿using Farmasi.Services.Basket.BL.Dtos.Basket;
 using Farmasi.Services.Basket.BL.Services.Abstractions;
-using Farmasi.Services.Basket.DAL.Entities;
 using Farmasi.Shared;
 using Farmasi.Shared.CustomControllerBase;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 
 namespace Farmasi.Services.Basket.API.Controllers
 {
@@ -17,10 +11,12 @@ namespace Farmasi.Services.Basket.API.Controllers
     public class BasketController : CustomBaseController
     {
         private readonly IBasketService _basketService;
+        private readonly ICatalogService _catalogService;
 
-        public BasketController(IBasketService basketService)
+        public BasketController(IBasketService basketService, ICatalogService catalogService)
         {
             _basketService = basketService;
+            _catalogService = catalogService;
         }
 
         [HttpGet]
@@ -32,30 +28,19 @@ namespace Farmasi.Services.Basket.API.Controllers
         [HttpPost]
         public async Task<IActionResult> SaveOrUpdateBasket()
         {
-            Response<List<ProductDto>> res = await HttpHelper.Get<Response<List<ProductDto>>>("http://localhost:5011/api/product");
-            ProductDto productDto = res.Data.FirstOrDefault();
-            
-            if(productDto != null)
+            Response<BasketDto> response = await _catalogService.GetProduct();
+
+            if (response.Data is null)
             {
-                    
-                BasketItemDto basketItem = new BasketItemDto();
-                basketItem.ProductId = productDto.Id;
-                basketItem.ProductName = productDto.Name;
-                basketItem.Price = productDto.Price;
-
-                List<BasketItemDto> basketItemList = new List<BasketItemDto> { basketItem };
-
-                var response = await _basketService.SaveOrUpdate(new BasketDto { BasketItems = basketItemList  });
-
-                return CreateActionResultInstance(response);
+                return NoContent();
             }
 
-            return NoContent();
+            var result = await _basketService.SaveOrUpdate(response.Data);
+            return CreateActionResultInstance(result);
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteBasket()
-
         {
             return CreateActionResultInstance(await _basketService.Delete());
         }

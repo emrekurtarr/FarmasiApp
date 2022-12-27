@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Farmasi.Services.Catalog.BL.Dtos.Product
+﻿namespace Farmasi.Services.Catalog.BL.Dtos.Product
 {
     public class ProductListRequestDto
     {
@@ -12,7 +6,7 @@ namespace Farmasi.Services.Catalog.BL.Dtos.Product
         public OrderBy? OrderBy { get; set; }
         public int PageIndex { get; set; }
         public int PageSize { get; set; }
-        
+
     }
     public enum OrderBy
     {

@@ -1,4 +1,4 @@
-using Farmasi.Services.Basket.BL.Services.Abstractions;
+using Farmasi.Services.Basket.BL;
 using Farmasi.Services.Basket.BL.Services.Implementations;
 using Farmasi.Services.Basket.DAL.Settings;
 using Microsoft.Extensions.Options;
@@ -13,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.Configure<RedisSettings>(builder.Configuration.GetSection("RedisSettings"));
-
+builder.Services.AddApplicationServices();
 builder.Services.AddSingleton<RedisService>(sp =>
 {
     var redisSetting = sp.GetRequiredService<IOptions<RedisSettings>>().Value;
@@ -22,7 +22,7 @@ builder.Services.AddSingleton<RedisService>(sp =>
     return redis;
 });
 
-builder.Services.AddScoped<IBasketService, BasketService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

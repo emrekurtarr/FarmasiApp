@@ -1,5 +1,4 @@
 using Farmasi.Services.Catalog.BL;
-using Farmasi.Services.Catalog.DAL.Data;
 using Farmasi.Services.Catalog.DAL.Settings;
 using Microsoft.Extensions.Options;
 
@@ -29,7 +28,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-} 
+}
 
 app.UseAuthorization();
 

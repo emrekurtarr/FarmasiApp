@@ -1,7 +1,4 @@
-﻿using Farmasi.Services.Catalog.BL.Dtos.Category;
-using Farmasi.Services.Catalog.BL.Dtos.Specification;
-
-namespace Farmasi.Services.Catalog.BL.Dtos.Product
+﻿namespace Farmasi.Services.Basket.BL.Dtos.Product
 {
     public class ProductDto
     {
@@ -13,5 +10,17 @@ namespace Farmasi.Services.Catalog.BL.Dtos.Product
         public SpecificationDto Specification { get; set; }
         public string CategoryId { get; set; }
         public CategoryDto Category { get; set; }
+    }
+
+    public class SpecificationDto
+    {
+        public string Usage { get; set; }
+
+    }
+
+    public class CategoryDto
+    {
+        public string Id { get; set; }
+        public string Name { get; set; }
     }
 }
